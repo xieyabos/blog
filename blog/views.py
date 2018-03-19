@@ -10,6 +10,7 @@ from django.utils.text import slugify
 from comments.forms import CommentForm
 from .models import Post, Category, Tag
 
+
 """
 请使用下方的模板引擎方式。
 def index(request):
