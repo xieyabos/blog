@@ -10,7 +10,6 @@ from django.utils.text import slugify
 from comments.forms import CommentForm
 from .models import Post, Category, Tag
 
-
 """
 请使用下方的模板引擎方式。
 def index(request):
@@ -36,7 +35,7 @@ class IndexView(ListView):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
-    paginate_by = 10
+    paginate_by = 4
 
     def get_context_data(self, **kwargs):
         """
