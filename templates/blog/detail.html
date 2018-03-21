@@ -29,12 +29,12 @@
     </article>
     <section class="comment-area" id="comment-area">
         <hr>
-        <h3>发表评论</h3>
+        <h3>发表评论</h3><h5>(姓名为必填项)</h5>
         <form action="{% url 'comments:post_comment' post.pk %}" method="post" class="comment-form">
             {% csrf_token %}
             <div class="row">
                 <div class="col-md-4">
-                    <label for="{{ form.name.id_for_label }}">名字：</label>
+                    <label for="{{ form.name.id_for_label }}">姓名：</label>
                     {{ form.name }}
                     {{ form.name.errors }}
                 </div>
